@@ -1,6 +1,6 @@
 ## 0.1.1 (unreleased)
 
-- Updated optimization level of shared libraries for better compatibility
+- Fixed illegal instruction error on some Linux platforms
 
 ## 0.1.0 (2020-02-09)
 
