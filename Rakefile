@@ -33,3 +33,14 @@ namespace :vendor do
 
   task all: [:linux, :mac, :windows]
 end
+
+task :benchmark do
+  require "argon2/kdf"
+  require "benchmark/ips"
+
+  Benchmark.ips do |x|
+    x.report("argon2id") do
+      Argon2::KDF.argon2id("password", salt: "somesalt", t: 2, m: 16, p: 4, length: 24)
+    end
+  end
+end
