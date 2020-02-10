@@ -5,7 +5,7 @@
 - No dependencies
 - Works on Linux, Mac, and Windows
 
-[![Build Status](https://travis-ci.org/ankane/argon2-kdf.svg?branch=master)](https://travis-ci.org/ankane/argon2-kdf)
+[![Build Status](https://travis-ci.org/ankane/argon2-kdf.svg?branch=master)](https://travis-ci.org/ankane/argon2-kdf) [![Build status](https://ci.appveyor.com/api/projects/status/97dt08xomsq2rsar/branch/master?svg=true)](https://ci.appveyor.com/project/ankane/argon2-kdf/branch/master)
 
 ## Installation
 
