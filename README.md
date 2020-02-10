@@ -18,7 +18,7 @@ gem 'argon2-kdf'
 ## Getting Started
 
 ```ruby
-Argon2::KDF.argon2id("pass", salt: "salt", t: 3, m: 15, p: 1, length: 32)
+Argon2::KDF.argon2id("pass", salt: "somesalt", t: 3, m: 15, p: 1, length: 32)
 ```
 
 `argon2i` and `argon2d` are also supported
