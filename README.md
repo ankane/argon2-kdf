@@ -5,6 +5,8 @@
 - No dependencies
 - Works on Linux, Mac, and Windows
 
+[![Build Status](https://travis-ci.org/ankane/argon2-kdf.svg?branch=master)](https://travis-ci.org/ankane/argon2-kdf)
+
 ## Installation
 
 Add this line to your application’s Gemfile:
