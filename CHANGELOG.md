@@ -1,4 +1,4 @@
-## 0.1.2 (unreleased)
+## 0.1.2 (2020-02-11)
 
 - Fixed `Could not find Argon2` error on some Linux platforms
 
