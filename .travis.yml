@@ -1,4 +1,6 @@
-dist: bionic
+dist:
+  - bionic
+  - xenial
 language: ruby
 rvm: 2.7
 cache:

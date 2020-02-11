@@ -8,8 +8,7 @@ module Argon2
         dlload Fiddle.dlopen(libs.shift)
       rescue Fiddle::DLError => e
         retry if libs.any?
-        raise e if ENV["ARGON2_KDF_DEBUG"]
-        raise LoadError, "Could not find Argon2"
+        raise e
       end
 
       # https://github.com/P-H-C/phc-winner-argon2/blob/master/include/argon2.h
