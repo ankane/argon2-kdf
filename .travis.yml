@@ -1,6 +1,11 @@
-dist:
-  - bionic
-  - xenial
+jobs:
+  include:
+    - os: linux
+      dist: bionic
+    - os: linux
+      dist: xenial
+    - os: linux
+      dist: trusty
 language: ruby
 rvm: 2.7
 cache:
