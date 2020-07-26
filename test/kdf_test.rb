@@ -16,6 +16,11 @@ class KDFTest < Minitest::Test
     assert_equal "1758c6d82577fcdafec91b88b0f2b0d09f6be2cedc247054", to_hex(hash)
   end
 
+  def test_empty_string
+    hash = Argon2::KDF.argon2i("", salt: "somesalt", t: 2, m: 16, p: 4, length: 24)
+    assert_equal "b8b4bd0fb65ae0ce6d2bc1fa91a6bca6ed9502dcc003fbdf", to_hex(hash)
+  end
+
   def test_invalid_salt
     error = assert_raises(Argon2::KDF::Error) do
       Argon2::KDF.argon2i("password", salt: "salt", t: 3, m: 16, p: 4, length: 24)
