@@ -25,6 +25,7 @@ namespace :vendor do
 
   task :mac do
     download_file("libargon2.dylib")
+    download_file("libargon2.arm64.dylib")
   end
 
   task :windows do
