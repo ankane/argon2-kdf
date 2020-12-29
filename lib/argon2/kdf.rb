@@ -14,6 +14,8 @@ module Argon2
     lib_name =
       if Gem.win_platform?
         "argon2.dll"
+      elsif RbConfig::CONFIG["arch"] =~ /arm64-darwin/i
+        "libargon2.arm64.dylib"
       elsif RbConfig::CONFIG["host_os"] =~ /darwin/i
         "libargon2.dylib"
       else
