@@ -25,6 +25,7 @@ end
 namespace :vendor do
   task :linux do
     download_file("libargon2.so", "5fb6d164f95de57605020ba12998666c64322e6b041eab8bbbf43033af3b3c0a")
+    download_file("libargon2.arm64.so", "c1394dcd083a59a4a15a19541a7bf0d5e3fbc508973eef9be760324ae5e25c3e")
   end
 
   task :mac do

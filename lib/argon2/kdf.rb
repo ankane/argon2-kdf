@@ -21,7 +21,11 @@ module Argon2
           "libargon2.dylib"
         end
       else
-        "libargon2.so"
+        if RbConfig::CONFIG["host_cpu"] =~ /aarch64/i
+          "libargon2.arm64.so"
+        else
+          "libargon2.so"
+        end
       end
     vendor_lib = File.expand_path("../../vendor/#{lib_name}", __dir__)
     self.ffi_lib = [vendor_lib]
