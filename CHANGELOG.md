@@ -1,4 +1,4 @@
-## 0.2.6 (unreleased)
+## 0.1.7 (2021-12-13)
 
 - Improved ARM detection
 
