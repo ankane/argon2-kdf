@@ -1,3 +1,7 @@
+## 0.2.6 (unreleased)
+
+- Improved ARM detection
+
 ## 0.1.6 (2021-03-10)
 
 - Added ARM shared library for Linux
