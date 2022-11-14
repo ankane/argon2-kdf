@@ -14,7 +14,7 @@ For password hashing, use the [argon2](https://github.com/technion/ruby-argon2) 
 Add this line to your application’s Gemfile:
 
 ```ruby
-gem 'argon2-kdf'
+gem "argon2-kdf"
 ```
 
 ## Getting Started
