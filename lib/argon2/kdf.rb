@@ -2,7 +2,7 @@
 require "fiddle/import"
 
 # modules
-require "argon2/kdf/version"
+require_relative "kdf/version"
 
 module Argon2
   module KDF
