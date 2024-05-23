@@ -7,7 +7,7 @@
 
 For password hashing, use the [argon2](https://github.com/technion/ruby-argon2) gem
 
-[![Build Status](https://github.com/ankane/argon2-kdf/workflows/build/badge.svg?branch=master)](https://github.com/ankane/argon2-kdf/actions)
+[![Build Status](https://github.com/ankane/argon2-kdf/actions/workflows/build.yml/badge.svg)](https://github.com/ankane/argon2-kdf/actions)
 
 ## Installation
 
