@@ -2,8 +2,7 @@
 
 [Argon2](https://github.com/P-H-C/phc-winner-argon2) key derivation for Ruby
 
-- No dependencies
-- Works on Linux, Mac, and Windows
+Works on Linux, Mac, and Windows
 
 For password hashing, use the [argon2](https://github.com/technion/ruby-argon2) gem
 
