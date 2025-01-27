@@ -28,7 +28,7 @@ module Argon2
         end
       end
     vendor_lib = File.expand_path("../../vendor/#{lib_name}", __dir__)
-    self.ffi_lib = [vendor_lib]
+    self.ffi_lib = [lib_name + '.1', vendor_lib]
 
     # friendlier error message
     autoload :FFI, "argon2/kdf/ffi"
