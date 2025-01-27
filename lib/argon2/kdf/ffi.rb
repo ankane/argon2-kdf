@@ -23,6 +23,11 @@ module Argon2
       extern "int argon2i_hash_raw(uint32_t t_cost, uint32_t m_cost, uint32_t parallelism, void *pwd, size_t pwdlen, void *salt, size_t saltlen, void *hash, size_t hashlen)"
       extern "int argon2d_hash_raw(uint32_t t_cost, uint32_t m_cost, uint32_t parallelism, void *pwd, size_t pwdlen, void *salt, size_t saltlen, void *hash, size_t hashlen)"
       extern "int argon2id_hash_raw(uint32_t t_cost, uint32_t m_cost, uint32_t parallelism, void *pwd, size_t pwdlen, void *salt, size_t saltlen, void *hash, size_t hashlen)"
+
+      extern "size_t argon2_encodedlen(uint32_t t_cost, uint32_t m_cost, uint32_t parallelism, uint32_t saltlen, uint32_t hashlen, int type)"
+      extern "int argon2i_hash_encoded(uint32_t t_cost, uint32_t m_cost, uint32_t parallelism, void *pwd, size_t pwdlen, void *salt, size_t saltlen, size_t hashlen, char *encoded, size_t encodedlen)"
+      extern "int argon2d_hash_encoded(uint32_t t_cost, uint32_t m_cost, uint32_t parallelism, void *pwd, size_t pwdlen, void *salt, size_t saltlen, size_t hashlen, char *encoded, size_t encodedlen)"
+      extern "int argon2id_hash_encoded(uint32_t t_cost, uint32_t m_cost, uint32_t parallelism, void *pwd, size_t pwdlen, void *salt, size_t saltlen, size_t hashlen, char *encoded, size_t encodedlen)"
       extern "char *argon2_error_message(int error_code)"
     end
   end
