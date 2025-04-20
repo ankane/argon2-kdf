@@ -51,7 +51,7 @@ module Argon2
       def kdf(variant, pass, salt, t, m, p, length)
         pwd = Fiddle::Pointer[pass.to_str]
         salt = Fiddle::Pointer[salt.to_str]
-        hash = Fiddle::Pointer.malloc(length)
+        hash = Fiddle::Pointer.malloc(length, Fiddle::RUBY_FREE)
         check_status FFI.send("#{variant}_hash_raw", t, 1 << m, p, pwd, pwd.size, salt, salt.size, hash, hash.size)
         hash[0, hash.size]
       end

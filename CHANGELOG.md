@@ -1,3 +1,7 @@
+## 0.3.1 (unreleased)
+
+- Fixed memory leak
+
 ## 0.3.0 (2024-12-29)
 
 - Fixed warning with Ruby 3.4
